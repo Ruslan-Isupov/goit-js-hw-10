@@ -1,8 +1,8 @@
-import Notiflix from 'notiflix';
-import './css/styles.css';
-import { countryList } from "./index.js";
+// import Notiflix from 'notiflix';
+// import './css/styles.css';
+// import { countryList } from "./index.js";
 
-import {renderUserListItems} from "./renderFunction.js"
+// import {renderUserListItems} from "./renderFunction.js"
 
 
 
@@ -16,13 +16,7 @@ const fetchCountries = function (nameCountry) {
 
       return resp.json();
     })
-    .then(country => {
-      renderUserListItems(country);
-    })
-    .catch(error => {
-      countryList.innerHTML = "";
-      Notiflix.Notify.failure('Oops, there is no country with that name');
-    });
+    
 };
 
 export { fetchCountries };

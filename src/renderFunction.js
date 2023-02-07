@@ -1,5 +1,6 @@
 import Notiflix from 'notiflix';
 import { countryList } from './index.js';
+
 function renderUserListItems(country) {
   let markup = '';
   if (country.length > 10) {
@@ -38,6 +39,7 @@ function renderUserListItems(country) {
     countryList.innerHTML = markup;
   }
 }
+
 function clearMarkup() {
   countryList.innerHTML = '';
 }
