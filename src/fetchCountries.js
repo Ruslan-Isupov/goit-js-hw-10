@@ -1,8 +1,3 @@
-// import Notiflix from 'notiflix';
-// import './css/styles.css';
-// import { countryList } from "./index.js";
-
-// import {renderUserListItems} from "./renderFunction.js"
 
 
 
